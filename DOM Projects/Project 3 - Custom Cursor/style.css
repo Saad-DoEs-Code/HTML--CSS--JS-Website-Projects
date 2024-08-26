@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cursor{
+    height: 30px;
+    width: 30px;
+
+    height: 2vw;
+    width: 2vw;
+    border-radius: 50%;
+    background-color: white;
+    /* Position: absolute is required to move cursor constantly */
+    position: absolute;
+    transition: all linear 0.1s;
+    /* To Contrast Colors */
+    mix-blend-mode: difference;
+}
+
+h1{
+    font-size: 8vw;
+    font-weight: 900;
+}
