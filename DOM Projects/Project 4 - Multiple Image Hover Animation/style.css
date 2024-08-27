@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body, html{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+.main{
+    position: relative;
+    width: 100%;
+    /* height: 100%; */
+}
+
+.element{
+    background-color: black;
+    height: 150px;
+    border-bottom: 2px solid white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+    position: relative;
+}
+
+.element h1{
+    font-size: 6vw;
+    font-family: sans-serif;
+}
+
+.element img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    /* These Properties are helping in our functionality */
+    position: absolute;
+    transition: all linear 0.3s;
+    opacity: 0;
+    mix-blend-mode: difference;
+}
